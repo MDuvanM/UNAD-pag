@@ -1,5 +1,40 @@
-.encabezado{
+.mainContainer {
+  /*background-color: cadetblue;*/
+  display: grid;
+  grid-template-areas:
+    'HD HD HD'
+    'BR BR BR'
+    'LT PR PR'
+    'PI PI PI';
+}
+
+.encabezado {
+   grid-area: HD;
    background-color: #4B5945;
    color: #B2C9AD;
+   padding: 50px;
+}
+
+.navbar{
+   background-color: #91AC8F;
+   grid-area: BR;
+   padding: 50px;
+}
+
+.principal{
+   background-color: #66785F;
+   grid-area: PR;
+   padding: 50px;
+}
+
+.lateral{
+   background-color: #B2C9AD;
+   grid-area: LT;
+   padding: 50px;
+}
+
+.piepagina{
+   background-color: #B2C9AD;
+   grid-area: PI;
    padding: 50px;
 }
